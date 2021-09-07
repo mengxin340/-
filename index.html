@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/flexible.js"></script>
+    <script src="js/swiper.min.js"></script>
+</head>
+
+<body>
+    <header class="header">黑马面面</header>
+    <!-- 导航模块 -->
+    <div class="nav">
+        <ul>
+            <li><span><img src="icons/icon1.png" alt=""></span>HR面试</li>
+            <li><span><img src="icons/icon2.png" alt=""></span>笔试</li>
+            <li><span><img src="icons/icon3.png" alt=""></span>技术面试</li>
+            <li><span><img src="icons/icon4.png" alt=""></span>模拟面试</li>
+            <li><span><img src="icons/icon5.png" alt=""></span>面试技巧</li>
+            <li><span><img src="icons/icon6.png" alt=""></span>薪资查询</li>
+        </ul>
+    </div>
+    <!-- banner模块 -->
+    <div class="banner">
+        <img src="images/go.png" alt="">
+    </div>
+    <!-- work模块 -->
+    <div class="work">
+        <div class="work_hd">
+            <div class="instruct">就业指导</div>
+            <div class="more"><a href="">更多>></a></div>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/pic.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/pic.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/pic.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/pic.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/pic.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/pic.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/pic.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/pic.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/pic.png" alt=""></div>
+            </div>
+            <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <p>老师教你应试技巧</p>
+
+        </div>        
+    </div>
+    <!-- learn模块 -->
+    <div class="learn">
+        <div class="work_hd">
+            <div class="charge">充电学习</div>
+            <div class="more"><a href="">更多>></a></div>
+        </div>
+    <!-- Swiper -->
+        <div class="swiper-ncontainer">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide"> <img src="images/pic2.png" alt=""><p>说地道英语，告别中式英语</p><span>156人学习</span></div>
+            <div class="swiper-slide"> <img src="images/pic2.png" alt=""><p>说地道英语，告别中式英语</p><span>156人学习</span></div>
+            <div class="swiper-slide"> <img src="images/pic2.png" alt=""><p>说地道英语，告别中式英语</p><span>156人学习</span></div>
+            <div class="swiper-slide"> <img src="images/pic2.png" alt=""><p>说地道英语，告别中式英语</p><span>156人学习</span></div>
+            <div class="swiper-slide"> <img src="images/pic2.png" alt=""><p>说地道英语，告别中式英语</p><span>156人学习</span></div>
+            <div class="swiper-slide"> <img src="images/pic2.png" alt=""><p>说地道英语，告别中式英语</p><span>156人学习</span></div>
+            <div class="swiper-slide"> <img src="images/pic2.png" alt=""><p>说地道英语，告别中式英语</p><span>156人学习</span></div>
+            <div class="swiper-slide"> <img src="images/pic2.png" alt=""><p>说地道英语，告别中式英语</p><span>156人学习</span></div>
+            <div class="swiper-slide"> <img src="images/pic2.png" alt=""><p>说地道英语，告别中式英语</p><span>156人学习</span></div>
+            <div class="swiper-slide"> <img src="images/pic2.png" alt=""><p>说地道英语，告别中式英语</p><span>156人学习</span></div> 
+        </div>
+    </div>        
+        
+        
+    </div>
+    <!-- 底部模块 -->
+    <footer class="footer">
+        <ul>
+            <li><img src="icons/home.png" alt="">首页</li>
+            <li><img src="icons/ms.png" alt="">技术面试</li>
+            <li><img src="icons/net.png" alt="">模拟面试</li>
+            <li><img src="icons/user.png" alt="">我的主页</li>
+        </ul>
+    </footer>
+        <script>
+            (function () {
+                var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 2.5,
+                spaceBetween: 0,
+                centeredSlides: true,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                }             
+            });
+            })();
+            (function () {
+                var swiper = new Swiper('.swiper-ncontainer', {
+                slidesPerView: 2.5,
+                spaceBetween: 15, 
+                slidesOffsetBefore: 15,              
+                });
+            })();
+        </script>
+
+</body>
+
+</html>
